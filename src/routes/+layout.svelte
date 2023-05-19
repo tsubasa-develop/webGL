@@ -1,0 +1,4 @@
+<svelte:head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+</svelte:head>
+<slot />
