@@ -32,6 +32,19 @@
 		const directionalLight = new THREE.DirectionalLight(0xffffff);
 		directionalLight.position.set(1, 1, 1);
 		scene.add(directionalLight);
+		// moon
+		createMoonField();
+		function createMoonField() {
+			const moon = new THREE.Mesh(
+				new THREE.SphereGeometry(50, 30, 30),
+				new THREE.MeshStandardMaterial({
+					map: new THREE.TextureLoader().load('/images/moon.gif'),
+					side: THREE.DoubleSide
+				})
+			);
+			moon.position.set(1000, 1, 1);
+			scene.add(moon);
+		}
 		// stars
 		createStarField();
 		function createStarField() {
