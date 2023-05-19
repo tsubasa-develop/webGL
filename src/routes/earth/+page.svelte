@@ -22,7 +22,7 @@
 		// Geometry
 		const geometry = new THREE.SphereGeometry(300, 30, 30);
 		const material = new THREE.MeshStandardMaterial({
-			map: new THREE.TextureLoader().load('../../images/earth.jpg')
+			map: new THREE.TextureLoader().load('/images/earth.jpg')
 		});
 		const mesh = new THREE.Mesh(geometry, material);
 		scene.add(mesh);
